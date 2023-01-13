@@ -117,7 +117,9 @@ transition: 0.5s;
     
 }
 .banner_btn{
+    margin:0 auto;
     margin-top: 40px;
+    
 }
 
 .banner_btn a{
@@ -143,6 +145,11 @@ transition: 0.5s;
   .container{
     width: 100%;
   }
+  
+#header_part{
+    
+    padding-bottom:120px;  
+ }
     .menu_parents{
         display: flex;
         flex-wrap: wrap;
