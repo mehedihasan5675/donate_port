@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;600;700;800&display=swap');
+
+*{
+    margin:0;
+    outline: 0;
+    padding:0
+}
+
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+
+.container{
+    width:900px;
+    margin: 0 auto;
+}
+.parents{
+    display: flex;
+}
+/*  =============================
+common part end
+================================*/
+
+
+
+
+
+
+
+
+
+/* ==========================
+ banner part start
+============================= */
+.menu{
+    width: 1000px;;
+    margin: 0 auto;
+    padding: 20px 0;
+    
+}
+.menu_item .menu_parents{
+    justify-content: space-between;
+}
+.menu_item{
+    padding: 40px 0;
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.menu_item ul li a{
+font-size: 24px;
+color:white;
+padding:10px 15px;
+background-color: #FF5959;
+border-bottom-left-radius: 20px;
+border-top-right-radius: 20px;
+transition: 0.5s;
+
+}
+.menu_item ul li:hover a{
+    background-color: #ff595984;
+}
+
+
+
+#header_part{
+   background-image: url('../images/donation13.jpg');
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   padding-bottom:150px;
+   position: relative;
+   z-index: 1
+    
+   
+}
+#header_part::after{
+    content: '';
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.642);
+    z-index: -1;
+}
+
+.banner{width: 850px;
+    text-align: center;   
+}
+.banner .banner_text {
+    color:aliceblue;
+    z-index: 2;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+.banner .banner_text h1{
+    font-size: 60px;
+    font-family: 'Inter', sans-serif;
+    line-height: 4.5rem;
+    margin-bottom: 10px;
+    padding-top: 120px;
+    
+}
+.banner .banner_text p{
+    padding:20px 150px 20px 150px;
+    line-height: 20px;
+    font-family: 'Inter', sans-serif;
+    
+    
+}
+.banner_btn{
+    margin-top: 40px;
+}
+
+.banner_btn a{
+    background-color: #FF5959;
+    padding:15px 25px;
+    color:white;
+    border-radius: 10px;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    
+}
+
+.hide{
+    display: none;
+}
+
+/* banner responsive */
+@media screen and (max-width:576px) {
+    .menu{
+        width: 100%;
+        
+    }
+  .container{
+    width: 100%;
+  }
+    .menu_parents{
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 20px;
+        
+    }
+    .menu_item ul li a{
+        font-size:16px;
+        padding:5px 10px;  
+     }
+     .banner{width:100%; 
+        text-align: start;  
+    }
+
+    .banner .banner_text h1{
+        font-size: 30px;
+      padding:20px 20px 10px 20px;
+        line-height: 2.5rem;
+       
+    }
+    .banner .banner_text p{
+        padding:0px 22px;
+        line-height: 1.5rem;
+    }
+    .banner_btn{
+        margin-top: 40px;
+        margin-left: 25px;
+    }
+}
+/* ==========================
+ banner part start
+============================= */
